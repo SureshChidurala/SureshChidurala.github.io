@@ -48,6 +48,7 @@
       <li><a href="#work">Work</a></li>
       <li><a href="#timeline">Timeline</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#contributions">Contributions</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="#contact" class="nav-cta">Let's talk</a>
@@ -475,11 +476,88 @@
   </div>
 </section>
 
+<!-- ORG CONTRIBUTIONS -->
+<section class="contributions" id="contributions">
+  <div class="container">
+    <h2 class="section-h">
+      <span class="section-num">05</span>
+      <span>Org contributions</span>
+      <span class="section-sub">Commit analytics across Realtyka frontend repos</span>
+    </h2>
+
+    <!-- Mini stat strip -->
+    <div class="contrib-stats">
+      <div class="contrib-stat">
+        <span class="contrib-stat-num">6,249</span>
+        <span class="contrib-stat-label">Total commits</span>
+      </div>
+      <div class="contrib-stat">
+        <span class="contrib-stat-num">12</span>
+        <span class="contrib-stat-label">Repos touched</span>
+      </div>
+      <div class="contrib-stat">
+        <span class="contrib-stat-num">16</span>
+        <span class="contrib-stat-label">Frontend apps</span>
+      </div>
+      <div class="contrib-stat">
+        <span class="contrib-stat-num">#9</span>
+        <span class="contrib-stat-label">Org rank</span>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="contrib-tabs">
+      <button class="contrib-tab active" data-ctab="my-repos">My Repos</button>
+      <button class="contrib-tab" data-ctab="top-commits">Top 20 by Commits</button>
+      <button class="contrib-tab" data-ctab="top-repos">Top 10 by Repos</button>
+      <button class="contrib-tab" data-ctab="apps">Frontend Apps</button>
+    </div>
+
+    <!-- Panel: My Repos -->
+    <div class="contrib-panel active" id="cpanel-my-repos">
+      <div class="contrib-card">
+        <div class="contrib-bars" id="myRepoBars"></div>
+      </div>
+    </div>
+
+    <!-- Panel: Top 20 by Commits -->
+    <div class="contrib-panel" id="cpanel-top-commits">
+      <div class="contrib-card">
+        <table class="contrib-table">
+          <thead><tr><th>Rank</th><th>Contributor</th><th>Commits</th><th class="col-bar">Distribution</th></tr></thead>
+          <tbody id="topCommitsBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Panel: Top 10 by Repos -->
+    <div class="contrib-panel" id="cpanel-top-repos">
+      <div class="contrib-card">
+        <table class="contrib-table">
+          <thead><tr><th>Rank</th><th>Contributor</th><th>Repos</th><th class="col-bar">Distribution</th></tr></thead>
+          <tbody id="topReposBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Panel: Frontend Apps -->
+    <div class="contrib-panel" id="cpanel-apps">
+      <div class="contrib-app-filters">
+        <button class="contrib-filter active" data-appfilter="all">All (16)</button>
+        <button class="contrib-filter" data-appfilter="web">Web (10)</button>
+        <button class="contrib-filter" data-appfilter="mobile">Mobile (6)</button>
+      </div>
+      <div class="contrib-apps-grid" id="appsGrid"></div>
+    </div>
+
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="container">
     <h2 class="section-h">
-      <span class="section-num">05</span>
+      <span class="section-num">06</span>
       <span>Let's build something</span>
     </h2>
 
